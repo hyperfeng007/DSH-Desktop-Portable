@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/hyperfeng007/DSH-Desktop-Portable",
+  "launcher_version": "1.0.6",
+  "runtime_adapter_version": "1.0.4",
+  "archive_date": "2026-09-29",
+  "upstream_build": "0.1.7-rc.2（此前审核构建）",
+  "original_package": "DSH-Portable-Windows-x64-v1.0.6.zip",
+  "original_zip_sha256": "52cbf2f97884b2befc5ee75f3434e8ef463c2abcf6bee07756add902acd7d2da",
+  "original_executable": "DSH-Portable.exe",
+  "original_exe_sha256": "af56a182d6aac3a4642e68d8f62d7508892aed8e5cb8381f9a3ca7416e0d4742",
+  "production_source": "byte-identical to the existing delivered ZIP; no new runtime changes",
+  "native_windows_tests": "compiled only, not executed",
+  "public_archive_scope": "latest launcher source, fixtures, documentation, tools and licenses; no user Data/Runtime/configuration/credentials",
+  "historical_releases": "not uploaded in this archive; historical test evidence remains clearly identified in docs"
+}

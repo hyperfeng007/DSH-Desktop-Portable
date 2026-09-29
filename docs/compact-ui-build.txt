@@ -1,0 +1,6 @@
+go version go1.26.1 linux/amd64
+PASS: Linux vet
+PASS: Windows vet
+PASS: Windows test compilation (NOT execution)
+PASS: rebuild byte-identical
+af56a182d6aac3a4642e68d8f62d7508892aed8e5cb8381f9a3ca7416e0d4742  ../DSH-Portable.exe

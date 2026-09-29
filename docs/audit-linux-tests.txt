@@ -1,0 +1,39 @@
+=== RUN   TestProxyValidation
+--- PASS: TestProxyValidation (0.00s)
+=== RUN   TestSafePaths
+--- PASS: TestSafePaths (0.00s)
+=== RUN   TestFeed
+--- PASS: TestFeed (0.00s)
+=== RUN   TestAsarPatch
+--- PASS: TestAsarPatch (0.00s)
+=== RUN   TestBridgeHTTPAndAuth
+--- PASS: TestBridgeHTTPAndAuth (0.00s)
+=== RUN   TestBridgeHTTPSConnect
+--- PASS: TestBridgeHTTPSConnect (0.01s)
+=== RUN   TestBridgeChainedHTTPProxy
+--- PASS: TestBridgeChainedHTTPProxy (0.01s)
+=== RUN   TestOfficialAsar
+    core_test.go:238: Official ASAR patched; original entry and unpacked layout preserved
+--- PASS: TestOfficialAsar (4.21s)
+=== RUN   TestAsarEmptyEntries
+--- PASS: TestAsarEmptyEntries (0.00s)
+=== RUN   TestProxyFailureDoesNotGoDirect
+--- PASS: TestProxyFailureDoesNotGoDirect (0.00s)
+=== RUN   TestConfigurationEncodings
+=== RUN   TestConfigurationEncodings/UTF8
+=== RUN   TestConfigurationEncodings/UTF8-BOM
+=== RUN   TestConfigurationEncodings/UTF16-LE-BOM
+=== RUN   TestConfigurationEncodings/UTF16-BE-BOM
+--- PASS: TestConfigurationEncodings (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF8 (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF8-BOM (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF16-LE-BOM (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF16-BE-BOM (0.00s)
+=== RUN   TestMalformedConfigurationEncodingRejected
+--- PASS: TestMalformedConfigurationEncodingRejected (0.00s)
+=== RUN   TestWindowsLengthCountsUTF16NotUTF8
+--- PASS: TestWindowsLengthCountsUTF16NotUTF8 (0.00s)
+=== RUN   TestDesktopCrashNeverReportedAsSuccess
+--- PASS: TestDesktopCrashNeverReportedAsSuccess (0.00s)
+PASS
+ok  	dsh-portable	5.255s

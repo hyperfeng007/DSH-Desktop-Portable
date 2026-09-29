@@ -1,0 +1,16 @@
+✔ Unicode/space/#/% path imports original entry and publishes readiness (131.586994ms)
+✔ pre-import initialization failure is logged and exits nonzero (151.15856ms)
+✔ missing launch environment produces a diagnosed failure (83.544631ms)
+✔ up-to-date desktop check delegates once to launcher and does not quit (253.581715ms)
+✔ update cancel does not schedule installation or quit (251.26217ms)
+✔ approved portable update schedules nonce-bound handoff and requests ordinary quit (251.730317ms)
+✔ default and updater sessions gate main startup and use the same endpoint (3.115879ms)
+✔ ClientRequest proxy login responds once without handing credentials to origin/upstream handlers (0.777632ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1369.985848

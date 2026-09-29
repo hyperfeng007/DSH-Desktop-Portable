@@ -1,0 +1,15 @@
+=== RUN   TestPortableCompressionMatrix
+    network_integration_test.go:220: {"fixture":"h1","protocol":"1.1","encoding":"identity","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h1","protocol":"1.1","encoding":"gzip","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h1","protocol":"1.1","encoding":"deflate","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h1","protocol":"1.1","encoding":"br","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h1","protocol":"1.1","probe":"wrong-key","status":401,"result":"PASS"}
+        {"fixture":"h2","protocol":"2.0","encoding":"identity","status":200,"contentTypeVisible":false,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h2","protocol":"2.0","encoding":"gzip","status":200,"contentTypeVisible":false,"bodyBytes":168,"models":null,"result":"EXPECTED-JSON-FAILURE-REPRODUCED"}
+        {"fixture":"h2","protocol":"2.0","encoding":"deflate","status":200,"contentTypeVisible":false,"bodyBytes":156,"models":null,"result":"EXPECTED-JSON-FAILURE-REPRODUCED"}
+        {"fixture":"h2","protocol":"2.0","encoding":"br","status":200,"contentTypeVisible":false,"bodyBytes":130,"models":null,"result":"EXPECTED-JSON-FAILURE-REPRODUCED"}
+        {"fixture":"h2","protocol":"2.0","probe":"wrong-key","status":401,"result":"PASS"}
+        
+--- PASS: TestPortableCompressionMatrix (0.26s)
+PASS
+ok  	dsh-portable	1.272s

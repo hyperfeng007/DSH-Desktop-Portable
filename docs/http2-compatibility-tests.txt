@@ -1,0 +1,70 @@
+=== RUN   TestProxyValidation
+--- PASS: TestProxyValidation (0.00s)
+=== RUN   TestSafePaths
+--- PASS: TestSafePaths (0.00s)
+=== RUN   TestFeed
+--- PASS: TestFeed (0.00s)
+=== RUN   TestAsarPatch
+--- PASS: TestAsarPatch (0.01s)
+=== RUN   TestBridgeHTTPAndAuth
+--- PASS: TestBridgeHTTPAndAuth (0.01s)
+=== RUN   TestBridgeHTTPSConnect
+--- PASS: TestBridgeHTTPSConnect (0.02s)
+=== RUN   TestBridgeChainedHTTPProxy
+--- PASS: TestBridgeChainedHTTPProxy (0.01s)
+=== RUN   TestOfficialAsar
+    core_test.go:265: Official ASAR: bounded desktop hook, Host prelude and three network/update modules verified
+--- PASS: TestOfficialAsar (3.81s)
+=== RUN   TestAsarEmptyEntries
+--- PASS: TestAsarEmptyEntries (0.00s)
+=== RUN   TestProxyFailureDoesNotGoDirect
+--- PASS: TestProxyFailureDoesNotGoDirect (0.00s)
+=== RUN   TestConfigurationEncodings
+=== RUN   TestConfigurationEncodings/UTF8
+=== RUN   TestConfigurationEncodings/UTF8-BOM
+=== RUN   TestConfigurationEncodings/UTF16-LE-BOM
+=== RUN   TestConfigurationEncodings/UTF16-BE-BOM
+--- PASS: TestConfigurationEncodings (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF8 (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF8-BOM (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF16-LE-BOM (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF16-BE-BOM (0.00s)
+=== RUN   TestMalformedConfigurationEncodingRejected
+--- PASS: TestMalformedConfigurationEncodingRejected (0.00s)
+=== RUN   TestWindowsLengthCountsUTF16NotUTF8
+--- PASS: TestWindowsLengthCountsUTF16NotUTF8 (0.00s)
+=== RUN   TestDesktopCrashNeverReportedAsSuccess
+--- PASS: TestDesktopCrashNeverReportedAsSuccess (0.00s)
+=== RUN   TestPublishedModelsUseLauncherProxy
+=== RUN   TestPublishedModelsUseLauncherProxy/baseline-1
+    network_integration_test.go:133: PASS published upstream model discovery via bridge
+        
+=== RUN   TestPublishedModelsUseLauncherProxy/baseline-0
+    network_integration_test.go:133: PASS published model discovery via explicit bridge dispatcher, despite global dispatcher replacement
+        
+--- PASS: TestPublishedModelsUseLauncherProxy (0.75s)
+    --- PASS: TestPublishedModelsUseLauncherProxy/baseline-1 (0.43s)
+    --- PASS: TestPublishedModelsUseLauncherProxy/baseline-0 (0.32s)
+=== RUN   TestPublishedModelsCompressedHTTP2Endpoint
+=== RUN   TestPublishedModelsCompressedHTTP2Endpoint/baseline-0
+    network_integration_test.go:133: PASS published model discovery via explicit bridge dispatcher, despite global dispatcher replacement
+        
+--- PASS: TestPublishedModelsCompressedHTTP2Endpoint (0.28s)
+    --- PASS: TestPublishedModelsCompressedHTTP2Endpoint/baseline-0 (0.28s)
+=== RUN   TestDesktopUpdateCheckUsesLauncherClient
+--- PASS: TestDesktopUpdateCheckUsesLauncherClient (0.00s)
+=== RUN   TestPortableCompressionMatrix
+    network_integration_test.go:220: {"fixture":"h1","protocol":"1.1","encoding":"identity","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h1","protocol":"1.1","encoding":"gzip","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h1","protocol":"1.1","encoding":"deflate","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h1","protocol":"1.1","encoding":"br","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h1","protocol":"1.1","probe":"wrong-key","status":401,"result":"PASS"}
+        {"fixture":"h2","protocol":"1.1","encoding":"identity","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h2","protocol":"1.1","encoding":"gzip","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h2","protocol":"1.1","encoding":"deflate","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h2","protocol":"1.1","encoding":"br","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h2","protocol":"1.1","probe":"wrong-key","status":401,"result":"PASS"}
+        
+--- PASS: TestPortableCompressionMatrix (0.26s)
+PASS
+ok  	dsh-portable	6.198s

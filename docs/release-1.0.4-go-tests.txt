@@ -1,0 +1,106 @@
+=== RUN   TestProxyValidation
+--- PASS: TestProxyValidation (0.00s)
+=== RUN   TestSafePaths
+--- PASS: TestSafePaths (0.00s)
+=== RUN   TestFeed
+--- PASS: TestFeed (0.00s)
+=== RUN   TestAsarPatch
+--- PASS: TestAsarPatch (0.01s)
+=== RUN   TestBridgeHTTPAndAuth
+--- PASS: TestBridgeHTTPAndAuth (0.00s)
+=== RUN   TestBridgeHTTPSConnect
+--- PASS: TestBridgeHTTPSConnect (0.01s)
+=== RUN   TestBridgeChainedHTTPProxy
+--- PASS: TestBridgeChainedHTTPProxy (0.01s)
+=== RUN   TestOfficialAsar
+    core_test.go:265: Official ASAR: bounded desktop hook, Host prelude and three network/update modules verified
+--- PASS: TestOfficialAsar (4.58s)
+=== RUN   TestAsarEmptyEntries
+--- PASS: TestAsarEmptyEntries (0.00s)
+=== RUN   TestProxyFailureDoesNotGoDirect
+--- PASS: TestProxyFailureDoesNotGoDirect (0.00s)
+=== RUN   TestConfigurationEncodings
+=== RUN   TestConfigurationEncodings/UTF8
+=== RUN   TestConfigurationEncodings/UTF8-BOM
+=== RUN   TestConfigurationEncodings/UTF16-LE-BOM
+=== RUN   TestConfigurationEncodings/UTF16-BE-BOM
+--- PASS: TestConfigurationEncodings (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF8 (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF8-BOM (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF16-LE-BOM (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF16-BE-BOM (0.00s)
+=== RUN   TestMalformedConfigurationEncodingRejected
+--- PASS: TestMalformedConfigurationEncodingRejected (0.00s)
+=== RUN   TestWindowsLengthCountsUTF16NotUTF8
+--- PASS: TestWindowsLengthCountsUTF16NotUTF8 (0.00s)
+=== RUN   TestDesktopCrashNeverReportedAsSuccess
+--- PASS: TestDesktopCrashNeverReportedAsSuccess (0.00s)
+=== RUN   TestPublishedModelsUseLauncherProxy
+=== RUN   TestPublishedModelsUseLauncherProxy/baseline-1
+    network_integration_test.go:133: PASS published upstream model discovery via bridge
+        
+=== RUN   TestPublishedModelsUseLauncherProxy/baseline-0
+    network_integration_test.go:133: PASS published model discovery via explicit bridge dispatcher, despite global dispatcher replacement
+        
+--- PASS: TestPublishedModelsUseLauncherProxy (0.85s)
+    --- PASS: TestPublishedModelsUseLauncherProxy/baseline-1 (0.54s)
+    --- PASS: TestPublishedModelsUseLauncherProxy/baseline-0 (0.31s)
+=== RUN   TestPublishedModelsCompressedHTTP2Endpoint
+=== RUN   TestPublishedModelsCompressedHTTP2Endpoint/baseline-0
+    network_integration_test.go:133: PASS published model discovery via explicit bridge dispatcher, despite global dispatcher replacement
+        
+--- PASS: TestPublishedModelsCompressedHTTP2Endpoint (0.45s)
+    --- PASS: TestPublishedModelsCompressedHTTP2Endpoint/baseline-0 (0.44s)
+=== RUN   TestDesktopUpdateCheckUsesLauncherClient
+--- PASS: TestDesktopUpdateCheckUsesLauncherClient (0.00s)
+=== RUN   TestPortableCompressionMatrix
+    network_integration_test.go:220: {"fixture":"h1","protocol":"1.1","encoding":"identity","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h1","protocol":"1.1","encoding":"gzip","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h1","protocol":"1.1","encoding":"deflate","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h1","protocol":"1.1","encoding":"br","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h1","protocol":"1.1","probe":"wrong-key","status":401,"result":"PASS"}
+        {"fixture":"h2","protocol":"1.1","encoding":"identity","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h2","protocol":"1.1","encoding":"gzip","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h2","protocol":"1.1","encoding":"deflate","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h2","protocol":"1.1","encoding":"br","status":200,"contentTypeVisible":true,"bodyBytes":1284,"models":12,"result":"PASS"}
+        {"fixture":"h2","protocol":"1.1","probe":"wrong-key","status":401,"result":"PASS"}
+        
+--- PASS: TestPortableCompressionMatrix (0.33s)
+=== RUN   TestLocalUpgradeKnownVersions
+=== RUN   TestLocalUpgradeKnownVersions/1.0.2
+=== RUN   TestLocalUpgradeKnownVersions/1.0.3
+--- PASS: TestLocalUpgradeKnownVersions (0.06s)
+    --- PASS: TestLocalUpgradeKnownVersions/1.0.2 (0.03s)
+    --- PASS: TestLocalUpgradeKnownVersions/1.0.3 (0.03s)
+=== RUN   TestSameVersionDifferentPayloadRequiresDownload
+--- PASS: TestSameVersionDifferentPayloadRequiresDownload (0.01s)
+=== RUN   TestLocalUpgradeFailurePreservesSource
+=== RUN   TestLocalUpgradeFailurePreservesSource/cancel-before
+=== RUN   TestLocalUpgradeFailurePreservesSource/cancel-copy
+=== RUN   TestLocalUpgradeFailurePreservesSource/commit-error
+=== RUN   TestLocalUpgradeFailurePreservesSource/bad-asset
+=== RUN   TestLocalUpgradeFailurePreservesSource/bad-unpacked
+=== RUN   TestLocalUpgradeFailurePreservesSource/bad-entry
+=== RUN   TestLocalUpgradeFailurePreservesSource/unknown-wrapper
+=== RUN   TestLocalUpgradeFailurePreservesSource/symlink
+--- PASS: TestLocalUpgradeFailurePreservesSource (0.10s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/cancel-before (0.01s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/cancel-copy (0.01s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/commit-error (0.02s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/bad-asset (0.01s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/bad-unpacked (0.01s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/bad-entry (0.01s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/unknown-wrapper (0.01s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/symlink (0.01s)
+=== RUN   TestRealPublishedRuntimeLocalUpgrade
+=== RUN   TestRealPublishedRuntimeLocalUpgrade/1.0.2
+    runtime_reuse_test.go:276: PASS: published ASAR and 1495 unpacked entries validated; local 1.0.2 upgrade preserved original EXE/old ASAR and switched pointer; no download client involved
+=== RUN   TestRealPublishedRuntimeLocalUpgrade/1.0.3
+    runtime_reuse_test.go:276: PASS: published ASAR and 1495 unpacked entries validated; local 1.0.3 upgrade preserved original EXE/old ASAR and switched pointer; no download client involved
+--- PASS: TestRealPublishedRuntimeLocalUpgrade (138.36s)
+    --- PASS: TestRealPublishedRuntimeLocalUpgrade/1.0.2 (64.96s)
+    --- PASS: TestRealPublishedRuntimeLocalUpgrade/1.0.3 (73.39s)
+=== RUN   TestSHA256Helper
+--- PASS: TestSHA256Helper (0.00s)
+PASS
+ok  	dsh-portable	145.829s

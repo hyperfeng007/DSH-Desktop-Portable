@@ -1,0 +1,55 @@
+=== RUN   TestProxyValidation
+--- PASS: TestProxyValidation (0.00s)
+=== RUN   TestSafePaths
+--- PASS: TestSafePaths (0.00s)
+=== RUN   TestFeed
+--- PASS: TestFeed (0.00s)
+=== RUN   TestAsarPatch
+--- PASS: TestAsarPatch (0.01s)
+=== RUN   TestBridgeHTTPAndAuth
+--- PASS: TestBridgeHTTPAndAuth (0.01s)
+=== RUN   TestBridgeHTTPSConnect
+--- PASS: TestBridgeHTTPSConnect (0.01s)
+=== RUN   TestBridgeChainedHTTPProxy
+--- PASS: TestBridgeChainedHTTPProxy (0.01s)
+=== RUN   TestOfficialAsar
+    core_test.go:204: set DSH_TEST_OFFICIAL_ASAR to verify a real upstream payload
+--- SKIP: TestOfficialAsar (0.00s)
+=== RUN   TestAsarEmptyEntries
+--- PASS: TestAsarEmptyEntries (0.00s)
+=== RUN   TestProxyFailureDoesNotGoDirect
+--- PASS: TestProxyFailureDoesNotGoDirect (0.00s)
+=== RUN   TestConfigurationEncodings
+=== RUN   TestConfigurationEncodings/UTF8
+=== RUN   TestConfigurationEncodings/UTF8-BOM
+=== RUN   TestConfigurationEncodings/UTF16-LE-BOM
+=== RUN   TestConfigurationEncodings/UTF16-BE-BOM
+--- PASS: TestConfigurationEncodings (0.01s)
+    --- PASS: TestConfigurationEncodings/UTF8 (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF8-BOM (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF16-LE-BOM (0.00s)
+    --- PASS: TestConfigurationEncodings/UTF16-BE-BOM (0.00s)
+=== RUN   TestMalformedConfigurationEncodingRejected
+--- PASS: TestMalformedConfigurationEncodingRejected (0.00s)
+=== RUN   TestWindowsLengthCountsUTF16NotUTF8
+--- PASS: TestWindowsLengthCountsUTF16NotUTF8 (0.00s)
+=== RUN   TestWindowsProxyParsing
+--- PASS: TestWindowsProxyParsing (0.00s)
+=== RUN   TestPortableWindowsEnvironment
+--- PASS: TestPortableWindowsEnvironment (0.07s)
+=== RUN   TestJobChildHelper
+--- PASS: TestJobChildHelper (0.00s)
+=== RUN   TestWindowsJobLifecycle
+--- PASS: TestWindowsJobLifecycle (0.12s)
+=== RUN   TestWindowsEnvironmentEncoding
+--- PASS: TestWindowsEnvironmentEncoding (0.00s)
+=== RUN   TestWindowsCommandLineLimits
+--- PASS: TestWindowsCommandLineLimits (0.00s)
+=== RUN   TestUnicodeProcessHelper
+--- PASS: TestUnicodeProcessHelper (0.00s)
+=== RUN   TestRealWindowsUnicodeLaunch
+    windows_test.go:171: mkdir C:\users\user\AppData\Local\Temp\TestRealWindowsUnicodeLaunch4110597388\001\中文 空格 # & %TEMP% ! ' 𠀀😀: File not found.
+--- FAIL: TestRealWindowsUnicodeLaunch (0.01s)
+=== RUN   TestWin32UnicodeTextUnderGC
+--- PASS: TestWin32UnicodeTextUnderGC (0.20s)
+FAIL

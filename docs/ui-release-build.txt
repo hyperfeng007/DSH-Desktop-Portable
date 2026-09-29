@@ -1,0 +1,8 @@
+Final UI/lifecycle source validation: DSH 1.0.5; adapter 1.0.4
+go version go1.26.1 linux/amd64
+v24.21.0
+PASS: Linux vet
+PASS: Windows vet
+PASS: Windows test compilation; NOT EXECUTED
+PASS: two builds byte-identical
+c2d9f82796a56b549db7392f73a954cc214a5bb98cd4b5f562fb71b2858e7489  ../DSH-Portable.exe

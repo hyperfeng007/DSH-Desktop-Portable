@@ -1,0 +1,38 @@
+=== RUN   TestLocalUpgradeKnownVersions
+=== RUN   TestLocalUpgradeKnownVersions/1.0.2
+=== RUN   TestLocalUpgradeKnownVersions/1.0.3
+--- PASS: TestLocalUpgradeKnownVersions (0.04s)
+    --- PASS: TestLocalUpgradeKnownVersions/1.0.2 (0.02s)
+    --- PASS: TestLocalUpgradeKnownVersions/1.0.3 (0.02s)
+=== RUN   TestSameVersionDifferentPayloadRequiresDownload
+--- PASS: TestSameVersionDifferentPayloadRequiresDownload (0.01s)
+=== RUN   TestLocalUpgradeFailurePreservesSource
+=== RUN   TestLocalUpgradeFailurePreservesSource/cancel-before
+=== RUN   TestLocalUpgradeFailurePreservesSource/cancel-copy
+=== RUN   TestLocalUpgradeFailurePreservesSource/commit-error
+=== RUN   TestLocalUpgradeFailurePreservesSource/bad-asset
+=== RUN   TestLocalUpgradeFailurePreservesSource/bad-unpacked
+=== RUN   TestLocalUpgradeFailurePreservesSource/bad-entry
+=== RUN   TestLocalUpgradeFailurePreservesSource/unknown-wrapper
+=== RUN   TestLocalUpgradeFailurePreservesSource/symlink
+--- PASS: TestLocalUpgradeFailurePreservesSource (0.07s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/cancel-before (0.01s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/cancel-copy (0.01s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/commit-error (0.01s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/bad-asset (0.01s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/bad-unpacked (0.01s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/bad-entry (0.01s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/unknown-wrapper (0.01s)
+    --- PASS: TestLocalUpgradeFailurePreservesSource/symlink (0.01s)
+=== RUN   TestRealPublishedRuntimeLocalUpgrade
+=== RUN   TestRealPublishedRuntimeLocalUpgrade/1.0.2
+    runtime_reuse_test.go:276: PASS: published ASAR and 1495 unpacked entries validated; local 1.0.2 upgrade preserved original EXE/old ASAR and switched pointer; no download client involved
+=== RUN   TestRealPublishedRuntimeLocalUpgrade/1.0.3
+    runtime_reuse_test.go:276: PASS: published ASAR and 1495 unpacked entries validated; local 1.0.3 upgrade preserved original EXE/old ASAR and switched pointer; no download client involved
+--- PASS: TestRealPublishedRuntimeLocalUpgrade (54.41s)
+    --- PASS: TestRealPublishedRuntimeLocalUpgrade/1.0.2 (27.79s)
+    --- PASS: TestRealPublishedRuntimeLocalUpgrade/1.0.3 (26.61s)
+=== RUN   TestSHA256Helper
+--- PASS: TestSHA256Helper (0.00s)
+PASS
+ok  	dsh-portable	55.584s
